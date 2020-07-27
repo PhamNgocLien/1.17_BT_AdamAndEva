@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adam and Eva</title>
+</head>
+<body>
+<script src="human.js"></script>
+<script src="apple.js"></script>
+<script>
+    let apple = new Apple();
+
+    let adam = new Human();
+    adam.setName('Adam');
+    adam.setGender('Male');
+    adam.setWeight(70);
+    adam.say('Hello! I am Adam');
+    adam.eat(apple);
+
+    let eva = new Human();
+    eva.setName('Eva');
+    eva.setGender('Female');
+    eva.setWeight(50);
+    eva.say('Hi! I am Eva');
+    eva.eat(apple);
+
+    apple.getWeight();
+
+    alert(`${adam.name} có giới tính là ${adam.gender} cân nặng là ${adam.weight}`);
+    alert(`${eva.name} có giới tính là ${eva.gender} cân nặng là ${eva.weight}`);
+    alert(`Trọng lượng quả táo là: ${apple.weight}`);
+</script>
+</body>
+</html>
